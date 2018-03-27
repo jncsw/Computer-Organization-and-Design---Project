@@ -1,0 +1,126 @@
+# Copyright (C) 1991-2008 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+
+
+# The default values for assignments are stored in the file
+#		EXP2_assignment_defaults.qdf
+# If this file doesn't exist, and for assignments not listed, see file
+#		assignment_defaults.qdf
+
+# Altera recommends that you do not modify this file. This
+# file is updated automatically by the Quartus II software
+# and any changes you make may be lost or overwritten.
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C8Q208C8
+set_global_assignment -name TOP_LEVEL_ENTITY EXP2
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 8.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:57:30  OCTOBER 11, 2017"
+set_global_assignment -name LAST_QUARTUS_VERSION 8.1
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name BDF_FILE EXP2.bdf
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_ASDO_AFTER_CONFIGURATION "AS INPUT TRI-STATED"
+set_global_assignment -name BDF_FILE selector.bdf
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name MISC_FILE "F:/EXP2/EXP2.dpf"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_132 -to CLK
+set_location_assignment PIN_206 -to CLR
+set_location_assignment PIN_168 -to O1
+set_location_assignment PIN_169 -to O2
+set_location_assignment PIN_170 -to O3
+set_location_assignment PIN_171 -to O4
+set_location_assignment PIN_173 -to O5
+set_location_assignment PIN_175 -to O6
+set_location_assignment PIN_176 -to O7
+set_location_assignment PIN_179 -to O8
+set_location_assignment PIN_99 -to OE
+set_location_assignment PIN_192 -to Q1
+set_location_assignment PIN_193 -to Q2
+set_location_assignment PIN_195 -to Q3
+set_location_assignment PIN_197 -to Q4
+set_location_assignment PIN_198 -to Q5
+set_location_assignment PIN_199 -to Q6
+set_location_assignment PIN_200 -to Q7
+set_location_assignment PIN_201 -to Q8
+set_location_assignment PIN_63 -to rd
+set_location_assignment PIN_89 -to rdi
+set_location_assignment PIN_64 -to wr
+set_location_assignment PIN_90 -to wri
+set_location_assignment PIN_97 -to XPC
+set_location_assignment PIN_96 -to XMAR
+set_location_assignment PIN_92 -to CPMAR
+set_location_assignment PIN_95 -to CPPC
+set_location_assignment PIN_94 -to CPR
+set_location_assignment PIN_180 -to RA0
+set_location_assignment PIN_181 -to RA1
+set_location_assignment PIN_182 -to RA2
+set_location_assignment PIN_185 -to RA3
+set_location_assignment PIN_187 -to RA4
+set_location_assignment PIN_188 -to RA5
+set_location_assignment PIN_189 -to RA6
+set_location_assignment PIN_191 -to RA7
+set_location_assignment PIN_61 -to CPuIR
+set_location_assignment PIN_60 -to uRD
+set_global_assignment -name MISC_FILE "E:/EXP2/EXP2.dpf"
+set_location_assignment PIN_34 -to L1
+set_location_assignment PIN_35 -to L2
+set_location_assignment PIN_37 -to L3
+set_location_assignment PIN_39 -to L4
+set_location_assignment PIN_40 -to L5
+set_location_assignment PIN_41 -to L6
+set_location_assignment PIN_43 -to L7
+set_location_assignment PIN_44 -to L8
+set_location_assignment PIN_151 -to MARO0
+set_location_assignment PIN_152 -to MARO1
+set_location_assignment PIN_160 -to MARO2
+set_location_assignment PIN_161 -to MARO3
+set_location_assignment PIN_162 -to MARO4
+set_location_assignment PIN_163 -to MARO5
+set_location_assignment PIN_164 -to MARO6
+set_location_assignment PIN_165 -to MARO7
+set_location_assignment PIN_142 -to PCO1
+set_location_assignment PIN_143 -to PCO2
+set_location_assignment PIN_144 -to PCO3
+set_location_assignment PIN_145 -to PCO4
+set_location_assignment PIN_146 -to PCO5
+set_location_assignment PIN_147 -to PCO6
+set_location_assignment PIN_149 -to PCO7
+set_location_assignment PIN_150 -to PCO8
+set_location_assignment PIN_11 -to S0
+set_location_assignment PIN_12 -to S1
+set_location_assignment PIN_13 -to S2
+set_location_assignment PIN_14 -to S3
+set_location_assignment PIN_15 -to S4
+set_location_assignment PIN_30 -to S5
+set_location_assignment PIN_31 -to S6
+set_location_assignment PIN_33 -to S7
+set_location_assignment PIN_128 -to uPC0
+set_location_assignment PIN_133 -to uPC1
+set_location_assignment PIN_134 -to uPC2
+set_location_assignment PIN_135 -to uPC3
+set_location_assignment PIN_137 -to uPC4
+set_location_assignment PIN_138 -to uPC5
+set_location_assignment PIN_139 -to uPC6
+set_location_assignment PIN_141 -to uPC7
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED"

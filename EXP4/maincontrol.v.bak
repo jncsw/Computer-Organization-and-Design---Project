@@ -1,0 +1,31 @@
+module maincontrol(P,T3,T2,T1,T4,W1,W2,MOV1,MOV2,ADD,MOV3,HALT,MA,RA,PB,RB,CPR0,CPR1,CPPC,CPIR,CPMAR,RDN,WRN,C,G,M,S3,S2,S1,S0,CN,SUB,MUL,DIV,SHIFT,AND,OR,XOR,AN,A1,AB1,OA,OB);
+input P,T3,T2,T1,T4,W1,W2,MOV1,MOV2,ADD,MOV3,HALT,SUB,MUL,DIV,SHIFT,AND,OR,XOR,AN,A1,AB1,OA,OB;
+output MA,RA,PB,RB,CPR0,CPR1,CPPC,CPIR,CPMAR,RDN,WRN,C,G,M,S3,S2,S1,S0,CN;
+
+
+
+assign MA = W1&T2 | W2&T3&(MOV1 | MOV2 | MOV3);
+assign RA = W2 & (ADD|SUB|MUL|DIV|SHIFT|AND|OR|XOR|AN|A1|AB1|OA|OB) & T1 ;
+assign PB = W1 & (T1 | T3 )  | W2 & (T1| T2) & (MOV1 | MOV2 | MOV3);
+assign RB = W2 & (ADD & T1 | MOV3 & T4) | W2&(SUB|MUL|DIV|SHIFT|AND|OR|XOR|AN|A1|AB1|OA|OB)&T1;
+assign CPR0 = W2 & MOV1 & T3 & P;
+assign CPR1 = W2 & (ADD & T1 | MOV2 & T3 | SUB & T1 | T1&MUL | T1&DIV) & P | W2 & (SHIFT|AND|OR|XOR|AN|A1|AB1|OA|OB) & T1 &P;
+assign CPPC = (W1&T3 | W2&T2&(MOV1|MOV2|MOV3))&P;
+assign CPIR = W1&T2&P;
+assign CPMAR = (W1&T1 | W2&(MOV1&T1 | MOV2&T1 | MOV3&(T1|T3)))&P;
+assign RDN = ~(W1&T2 | W2&T3&(MOV1|MOV2|MOV3));
+assign WRN = ~(W2&MOV3&T4);
+assign C = W2&MOV3&T4;
+assign G = W2&HALT&T1;
+assign M = W1&(~T3) | W2&MOV1&(~T2) | W2&MOV2&(~T2) | W2&ADD&(~T1) | W2&MOV3&(~T2) | (AND|OR|XOR|AN|OA|OB)&W2&T1;
+assign S3 = ~((SUB|XOR|AN)&T1&W2);
+assign S2 = W1&(~T1)&(~T3) | W2&MOV1&(~T1)&(~T2) | W2&MOV2&(~T1)&(~T2) | W2&ADD&(~T1) | W2&MOV3&(~T1)&(~T2)&(~T4) | W2&(SUB|OR|XOR|A1|OA)&T1;
+
+
+assign S1 = W1&(~T3) | W2&MOV1&(~T2) | W2&MOV2&(~T2) | W2&ADD&(~T1) | W2&MOV3&(~T2) | W2&T1&(SUB|OR|AND|XOR|A1|OA|OB);
+
+assign S0 = W1&(~T1) | W2&MOV1&(~T1) | W2&MOV2&(~T1) | W2&(ADD|AND|A1|AB1|OA)&T1 | W2&MOV3&(~T1)&(~T4);
+assign CN = W1&(~T3) | W2&MOV1&(~T2) | W2&MOV2&(~T2) | W2&(ADD|A1)&T1 | W2&MOV3&(~T2);
+
+
+endmodule

@@ -1,0 +1,1312 @@
+Version 8.1 Build 163 10/28/2008 SJ Web Edition
+11
+945
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+Reg
+# storage
+db|EXP4.(1).cnf
+db|EXP4.(1).cnf
+# case_insensitive
+# source_file
+Reg.bdf
+6facaff79d8813f962c8268ad4c5eb
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Reg:MAR
+Reg:IR
+Reg:R0
+Reg:PC
+Reg:R1
+}
+# macro_sequence
+
+# end
+# entity
+decoder24
+# storage
+db|EXP4.(4).cnf
+db|EXP4.(4).cnf
+# case_insensitive
+# source_file
+decoder24.bdf
+921b51b6689d543866d19614a4e926
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Timing:inst2|decoder24:inst
+}
+# macro_sequence
+
+# end
+# entity
+mod4add1
+# storage
+db|EXP4.(5).cnf
+db|EXP4.(5).cnf
+# case_insensitive
+# source_file
+mod4add1.bdf
+f750c433894b5749bf4d2345e79c3de9
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+mod4add1:inst3
+}
+# macro_sequence
+
+# end
+# entity
+sel2
+# storage
+db|EXP4.(7).cnf
+db|EXP4.(7).cnf
+# case_insensitive
+# source_file
+sel2.bdf
+9c6a80a0792c6e63b02dc6942d58f4b
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+sel2:inst23
+}
+# macro_sequence
+
+# end
+# entity
+lpm_divide_krp
+# storage
+db|EXP4.(11).cnf
+db|EXP4.(11).cnf
+# case_insensitive
+# source_file
+db|lpm_divide_krp.tdf
+4d1bbb5121bacb2232fce84022713520
+7
+# used_port {
+remain7
+-1
+3
+remain6
+-1
+3
+remain5
+-1
+3
+remain4
+-1
+3
+remain3
+-1
+3
+remain2
+-1
+3
+remain1
+-1
+3
+remain0
+-1
+3
+quotient7
+-1
+3
+quotient6
+-1
+3
+quotient5
+-1
+3
+quotient4
+-1
+3
+quotient3
+-1
+3
+quotient2
+-1
+3
+quotient1
+-1
+3
+quotient0
+-1
+3
+numer7
+-1
+3
+numer6
+-1
+3
+numer5
+-1
+3
+numer4
+-1
+3
+numer3
+-1
+3
+numer2
+-1
+3
+numer1
+-1
+3
+numer0
+-1
+3
+denom7
+-1
+3
+denom6
+-1
+3
+denom5
+-1
+3
+denom4
+-1
+3
+denom3
+-1
+3
+denom2
+-1
+3
+denom1
+-1
+3
+denom0
+-1
+3
+}
+# hierarchies {
+ALU:inst|lpm_divide1:inst2|lpm_divide:lpm_divide_component|lpm_divide_krp:auto_generated
+}
+# macro_sequence
+
+# end
+# entity
+sign_div_unsign_fkh
+# storage
+db|EXP4.(12).cnf
+db|EXP4.(12).cnf
+# case_insensitive
+# source_file
+db|sign_div_unsign_fkh.tdf
+daec28921bb353368754eaef9812418
+7
+# used_port {
+remainder7
+-1
+3
+remainder6
+-1
+3
+remainder5
+-1
+3
+remainder4
+-1
+3
+remainder3
+-1
+3
+remainder2
+-1
+3
+remainder1
+-1
+3
+remainder0
+-1
+3
+quotient7
+-1
+3
+quotient6
+-1
+3
+quotient5
+-1
+3
+quotient4
+-1
+3
+quotient3
+-1
+3
+quotient2
+-1
+3
+quotient1
+-1
+3
+quotient0
+-1
+3
+numerator7
+-1
+3
+numerator6
+-1
+3
+numerator5
+-1
+3
+numerator4
+-1
+3
+numerator3
+-1
+3
+numerator2
+-1
+3
+numerator1
+-1
+3
+numerator0
+-1
+3
+denominator7
+-1
+3
+denominator6
+-1
+3
+denominator5
+-1
+3
+denominator4
+-1
+3
+denominator3
+-1
+3
+denominator2
+-1
+3
+denominator1
+-1
+3
+denominator0
+-1
+3
+}
+# hierarchies {
+ALU:inst|lpm_divide1:inst2|lpm_divide:lpm_divide_component|lpm_divide_krp:auto_generated|sign_div_unsign_fkh:divider
+}
+# macro_sequence
+
+# end
+# entity
+alt_u_div_00f
+# storage
+db|EXP4.(13).cnf
+db|EXP4.(13).cnf
+# case_insensitive
+# source_file
+db|alt_u_div_00f.tdf
+69a49a4a88cc33bafd8a0dccb6067c3
+7
+# used_port {
+remainder7
+-1
+3
+remainder6
+-1
+3
+remainder5
+-1
+3
+remainder4
+-1
+3
+remainder3
+-1
+3
+remainder2
+-1
+3
+remainder1
+-1
+3
+remainder0
+-1
+3
+quotient7
+-1
+3
+quotient6
+-1
+3
+quotient5
+-1
+3
+quotient4
+-1
+3
+quotient3
+-1
+3
+quotient2
+-1
+3
+quotient1
+-1
+3
+quotient0
+-1
+3
+numerator7
+-1
+3
+numerator6
+-1
+3
+numerator5
+-1
+3
+numerator4
+-1
+3
+numerator3
+-1
+3
+numerator2
+-1
+3
+numerator1
+-1
+3
+numerator0
+-1
+3
+denominator7
+-1
+3
+denominator6
+-1
+3
+denominator5
+-1
+3
+denominator4
+-1
+3
+denominator3
+-1
+3
+denominator2
+-1
+3
+denominator1
+-1
+3
+denominator0
+-1
+3
+}
+# hierarchies {
+ALU:inst|lpm_divide1:inst2|lpm_divide:lpm_divide_component|lpm_divide_krp:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_00f:divider
+}
+# macro_sequence
+
+# end
+# entity
+add_sub_lkc
+# storage
+db|EXP4.(14).cnf
+db|EXP4.(14).cnf
+# case_insensitive
+# source_file
+db|add_sub_lkc.tdf
+269622aecf737e43edd2451a2f42d6d4
+7
+# used_port {
+result0
+-1
+3
+datab0
+-1
+3
+dataa0
+-1
+3
+cout
+-1
+3
+}
+# hierarchies {
+ALU:inst|lpm_divide1:inst2|lpm_divide:lpm_divide_component|lpm_divide_krp:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_00f:divider|add_sub_lkc:add_sub_0
+}
+# macro_sequence
+
+# end
+# entity
+add_sub_mkc
+# storage
+db|EXP4.(15).cnf
+db|EXP4.(15).cnf
+# case_insensitive
+# source_file
+db|add_sub_mkc.tdf
+27e1b09d3eeaaac5e752a7caa21298
+7
+# used_port {
+result1
+-1
+3
+result0
+-1
+3
+datab1
+-1
+3
+datab0
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+cout
+-1
+3
+}
+# hierarchies {
+ALU:inst|lpm_divide1:inst2|lpm_divide:lpm_divide_component|lpm_divide_krp:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_00f:divider|add_sub_mkc:add_sub_1
+}
+# macro_sequence
+
+# end
+# entity
+selector
+# storage
+db|EXP4.(17).cnf
+db|EXP4.(17).cnf
+# case_insensitive
+# source_file
+selector.bdf
+a526398baf8de7ec5267c156d55128
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+selector:inst15
+selector:inst16
+}
+# macro_sequence
+
+# end
+# entity
+mul
+# storage
+db|EXP4.(18).cnf
+db|EXP4.(18).cnf
+# case_insensitive
+# source_file
+mul.bdf
+e623525d9521a76d744a44d6e281e9
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+mul:inst21
+}
+# macro_sequence
+
+# end
+# entity
+tri8
+# storage
+db|EXP4.(21).cnf
+db|EXP4.(21).cnf
+# case_insensitive
+# source_file
+tri8.bdf
+32cbbaf5b4d1cdae52f54bdabc4037
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+tri8:inst40
+}
+# macro_sequence
+
+# end
+# entity
+Start
+# storage
+db|EXP4.(22).cnf
+db|EXP4.(22).cnf
+# case_insensitive
+# source_file
+Start.bdf
+d75498eaf288e5d830be46d7e1458b5
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Start:inst42
+}
+# macro_sequence
+
+# end
+# entity
+Timing
+# storage
+db|EXP4.(3).cnf
+db|EXP4.(3).cnf
+# case_insensitive
+# source_file
+Timing.bdf
+e9a4d09288ec4c146739f12fc04986d
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Timing:inst2
+}
+# macro_sequence
+
+# end
+# entity
+ALU
+# storage
+db|EXP4.(8).cnf
+db|EXP4.(8).cnf
+# case_insensitive
+# source_file
+ALU.bdf
+8c1db0c74d3c4c497a37697a9cf1f588
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ALU:inst
+}
+# macro_sequence
+
+# end
+# entity
+lpm_clshift_gic
+# storage
+db|EXP4.(25).cnf
+db|EXP4.(25).cnf
+# case_insensitive
+# source_file
+db|lpm_clshift_gic.tdf
+4d4067d839f98165f3e4b384b3ea6d
+7
+# used_port {
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+distance2
+-1
+3
+distance1
+-1
+3
+distance0
+-1
+3
+direction
+-1
+3
+data7
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# hierarchies {
+ALU:inst|lpm_clshift0:inst28|lpm_clshift:lpm_clshift_component|lpm_clshift_gic:auto_generated
+}
+# macro_sequence
+
+# end
+# entity
+control
+# storage
+db|EXP4.(6).cnf
+db|EXP4.(6).cnf
+# case_insensitive
+# source_file
+control.bdf
+e81b80d0d5f3fdc2c9edaf97e8a2efb4
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+control:inst1
+}
+# macro_sequence
+
+# end
+# entity
+maincontrol
+# storage
+db|EXP4.(2).cnf
+db|EXP4.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+maincontrol.v
+fe816871253739865abc7c35fe37b488
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+maincontrol:inst4
+}
+# macro_sequence
+
+# end
+# entity
+lpm_clshift0
+# storage
+db|EXP4.(9).cnf
+db|EXP4.(9).cnf
+# case_insensitive
+# source_file
+lpm_clshift0.tdf
+87394c186039efbf69cb7c61b81ee062
+7
+# used_port {
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+distance2
+-1
+3
+distance1
+-1
+3
+distance0
+-1
+3
+direction
+-1
+3
+data7
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# include_file {
+f:|software|altera|81|quartus|libraries|megafunctions|lpm_clshift.inc
+9854f08dd0873f9a6e62af152e90dfc3
+}
+# hierarchies {
+ALU:inst|lpm_clshift0:inst28
+}
+# macro_sequence
+
+# end
+# entity
+lpm_clshift
+# storage
+db|EXP4.(10).cnf
+db|EXP4.(10).cnf
+# case_insensitive
+# source_file
+f:|software|altera|81|quartus|libraries|megafunctions|lpm_clshift.tdf
+ca873ed289e576d2308d3222656df1
+7
+# user_parameter {
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+LPM_SHIFTTYPE
+LOGICAL
+PARAMETER_UNKNOWN
+USR
+LPM_WIDTH
+8
+PARAMETER_UNKNOWN
+USR
+LPM_WIDTHDIST
+3
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+lpm_clshift_gic
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+distance2
+-1
+3
+distance1
+-1
+3
+distance0
+-1
+3
+direction
+-1
+3
+data7
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# hierarchies {
+ALU:inst|lpm_clshift0:inst28|lpm_clshift:lpm_clshift_component
+}
+# macro_sequence
+
+# end
+# entity
+lpm_divide1
+# storage
+db|EXP4.(16).cnf
+db|EXP4.(16).cnf
+# case_insensitive
+# source_file
+lpm_divide1.tdf
+b945fc4f226bb06a17d9f30f1f8fc5
+7
+# used_port {
+quotient7
+-1
+3
+quotient6
+-1
+3
+quotient5
+-1
+3
+quotient4
+-1
+3
+quotient3
+-1
+3
+quotient2
+-1
+3
+quotient1
+-1
+3
+quotient0
+-1
+3
+numer7
+-1
+3
+numer6
+-1
+3
+numer5
+-1
+3
+numer4
+-1
+3
+numer3
+-1
+3
+numer2
+-1
+3
+numer1
+-1
+3
+numer0
+-1
+3
+denom7
+-1
+3
+denom6
+-1
+3
+denom5
+-1
+3
+denom4
+-1
+3
+denom3
+-1
+3
+denom2
+-1
+3
+denom1
+-1
+3
+denom0
+-1
+3
+}
+# include_file {
+f:|software|altera|81|quartus|libraries|megafunctions|lpm_divide.inc
+4b85a449a4e779c48f82a1cab71400
+}
+# hierarchies {
+ALU:inst|lpm_divide1:inst2
+}
+# macro_sequence
+
+# end
+# entity
+lpm_divide
+# storage
+db|EXP4.(19).cnf
+db|EXP4.(19).cnf
+# case_insensitive
+# source_file
+f:|software|altera|81|quartus|libraries|megafunctions|lpm_divide.tdf
+ed36a71dff4e1711978884156a526e26
+7
+# user_parameter {
+LPM_WIDTHN
+8
+PARAMETER_UNKNOWN
+USR
+LPM_WIDTHD
+8
+PARAMETER_UNKNOWN
+USR
+LPM_NREPRESENTATION
+UNSIGNED
+PARAMETER_UNKNOWN
+USR
+LPM_DREPRESENTATION
+UNSIGNED
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+LPM_REMAINDERPOSITIVE
+TRUE
+PARAMETER_UNKNOWN
+USR
+MAXIMIZE_SPEED
+5
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+lpm_divide_krp
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+OPTIMIZE_FOR_SPEED
+5
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+remain7
+-1
+3
+remain6
+-1
+3
+remain5
+-1
+3
+remain4
+-1
+3
+remain3
+-1
+3
+remain2
+-1
+3
+remain1
+-1
+3
+remain0
+-1
+3
+quotient7
+-1
+3
+quotient6
+-1
+3
+quotient5
+-1
+3
+quotient4
+-1
+3
+quotient3
+-1
+3
+quotient2
+-1
+3
+quotient1
+-1
+3
+quotient0
+-1
+3
+numer7
+-1
+3
+numer6
+-1
+3
+numer5
+-1
+3
+numer4
+-1
+3
+numer3
+-1
+3
+numer2
+-1
+3
+numer1
+-1
+3
+numer0
+-1
+3
+denom7
+-1
+3
+denom6
+-1
+3
+denom5
+-1
+3
+denom4
+-1
+3
+denom3
+-1
+3
+denom2
+-1
+3
+denom1
+-1
+3
+denom0
+-1
+3
+}
+# include_file {
+f:|software|altera|81|quartus|libraries|megafunctions|aglobal81.inc
+ba79644cade9dcbd5df4af72a9b02986
+f:|software|altera|81|quartus|libraries|megafunctions|abs_divider.inc
+cdfefd53e136b3a8e541899b82db37d
+f:|software|altera|81|quartus|libraries|megafunctions|sign_div_unsign.inc
+c1e17922387cb5d0c88d7fb673544bb4
+}
+# hierarchies {
+ALU:inst|lpm_divide1:inst2|lpm_divide:lpm_divide_component
+}
+# macro_sequence
+
+# end
+# entity
+74181
+# storage
+db|EXP4.(20).cnf
+db|EXP4.(20).cnf
+# case_insensitive
+# source_file
+f:|software|altera|81|quartus|libraries|others|maxplus2|74181.bdf
+5a7a42864d75db2f39a1f2da31e3e53
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ALU:inst|74181:inst1
+ALU:inst|74181:inst
+}
+# macro_sequence
+
+# end
+# entity
+74285
+# storage
+db|EXP4.(23).cnf
+db|EXP4.(23).cnf
+# case_insensitive
+# source_file
+f:|software|altera|81|quartus|libraries|others|maxplus2|74285.bdf
+3b73752db1d377fb87531feba2f5df5
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+mul:inst21|74285:inst
+}
+# macro_sequence
+
+# end
+# entity
+74284
+# storage
+db|EXP4.(24).cnf
+db|EXP4.(24).cnf
+# case_insensitive
+# source_file
+f:|software|altera|81|quartus|libraries|others|maxplus2|74284.bdf
+6c709183d9d28fbe1fe22cf210d55ec6
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+mul:inst21|74284:inst1
+}
+# macro_sequence
+
+# end
+# entity
+EXP4
+# storage
+db|EXP4.(0).cnf
+db|EXP4.(0).cnf
+# case_insensitive
+# source_file
+EXP4.bdf
+9bded28cda962cefabe81533339a77
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

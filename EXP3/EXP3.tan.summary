@@ -1,0 +1,126 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 32.916 ns
+From           : uIR12
+To             : Reg:PC|inst8
+From Clock     : --
+To Clock       : uIR10
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 46.234 ns
+From           : Reg:PC|inst2
+To             : RAMdata0
+From Clock     : 132
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 44.287 ns
+From           : uIR12
+To             : RAMdata0
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 1.573 ns
+From           : uIR11
+To             : uPC:inst14|74161:inst1|f74161:sub|110
+From Clock     : --
+To Clock       : 132
+Failed Paths   : 0
+
+Type           : Clock Setup: 'uIR3'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 30.18 MHz ( period = 33.133 ns )
+From           : Reg:PC|inst2
+To             : Reg:PC|inst8
+From Clock     : uIR3
+To Clock       : uIR3
+Failed Paths   : 0
+
+Type           : Clock Setup: '132'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 30.18 MHz ( period = 33.133 ns )
+From           : Reg:PC|inst2
+To             : Reg:PC|inst8
+From Clock     : 132
+To Clock       : 132
+Failed Paths   : 0
+
+Type           : Clock Setup: 'ON/OFF'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 30.18 MHz ( period = 33.133 ns )
+From           : Reg:PC|inst2
+To             : Reg:PC|inst8
+From Clock     : ON/OFF
+To Clock       : ON/OFF
+Failed Paths   : 0
+
+Type           : Clock Setup: '131'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 30.18 MHz ( period = 33.133 ns )
+From           : Reg:PC|inst2
+To             : Reg:PC|inst8
+From Clock     : 131
+To Clock       : 131
+Failed Paths   : 0
+
+Type           : Clock Setup: 'uIR11'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 30.18 MHz ( period = 33.133 ns )
+From           : Reg:PC|inst2
+To             : Reg:PC|inst8
+From Clock     : uIR11
+To Clock       : uIR11
+Failed Paths   : 0
+
+Type           : Clock Setup: 'uIR9'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 30.18 MHz ( period = 33.133 ns )
+From           : Reg:PC|inst2
+To             : Reg:PC|inst8
+From Clock     : uIR9
+To Clock       : uIR9
+Failed Paths   : 0
+
+Type           : Clock Setup: 'uIR10'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 30.18 MHz ( period = 33.133 ns )
+From           : Reg:PC|inst2
+To             : Reg:PC|inst8
+From Clock     : uIR10
+To Clock       : uIR10
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="EXP3">
+		<CBX_INST_ENTRY INSTANCE_NAME="|EXP3|ALU:inst20|lpm_clshift0:inst28|lpm_clshift:lpm_clshift_component" CBX_FILE_NAME="lpm_clshift_gic.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|EXP3|ALU:inst20|lpm_divide1:inst2|lpm_divide:lpm_divide_component" CBX_FILE_NAME="lpm_divide_krp.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

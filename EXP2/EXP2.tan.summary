@@ -1,0 +1,76 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 3.143 ns
+From           : Q8
+To             : Reg:inst4|inst
+From Clock     : --
+To Clock       : CLK
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 14.923 ns
+From           : uPC:inst1|74161:inst|f74161:sub|110
+To             : O8
+From Clock     : CPPC
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 13.666 ns
+From           : XPC
+To             : O8
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 0.497 ns
+From           : Q6
+To             : 74374:inst|18
+From Clock     : --
+To Clock       : CPR
+Failed Paths   : 0
+
+Type           : Clock Setup: 'CLK'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 340.02 MHz ( period = 2.941 ns )
+From           : uPC:inst1|74161:inst|f74161:sub|9
+To             : uPC:inst1|74161:inst|f74161:sub|110
+From Clock     : CLK
+To Clock       : CLK
+Failed Paths   : 0
+
+Type           : Clock Setup: 'CPPC'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 351.62 MHz ( period = 2.844 ns )
+From           : uPC:inst1|74161:inst|f74161:sub|9
+To             : uPC:inst1|74161:inst|f74161:sub|110
+From Clock     : CPPC
+To Clock       : CPPC
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

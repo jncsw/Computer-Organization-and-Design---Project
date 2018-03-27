@@ -1,0 +1,425 @@
+Analysis & Synthesis report for EXP4
+Sat Dec 02 10:59:24 2017
+Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Analysis & Synthesis Source Files Read
+  5. Analysis & Synthesis Resource Usage Summary
+  6. Analysis & Synthesis Resource Utilization by Entity
+  7. General Register Statistics
+  8. Multiplexer Restructuring Statistics (Restructuring Performed)
+  9. Parameter Settings for User Entity Instance: ALU:inst|lpm_clshift0:inst28|lpm_clshift:lpm_clshift_component
+ 10. Parameter Settings for User Entity Instance: ALU:inst|lpm_divide1:inst2|lpm_divide:lpm_divide_component
+ 11. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2008 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                 ;
++------------------------------------+-----------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sat Dec 02 10:59:24 2017   ;
+; Quartus II Version                 ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
+; Revision Name                      ; EXP4                                    ;
+; Top-level Entity Name              ; EXP4                                    ;
+; Family                             ; Cyclone II                              ;
+; Total logic elements               ; 325                                     ;
+;     Total combinational functions  ; 325                                     ;
+;     Dedicated logic registers      ; 44                                      ;
+; Total registers                    ; 44                                      ;
+; Total pins                         ; 70                                      ;
+; Total virtual pins                 ; 0                                       ;
+; Total memory bits                  ; 0                                       ;
+; Embedded Multiplier 9-bit elements ; 0                                       ;
+; Total PLLs                         ; 0                                       ;
++------------------------------------+-----------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                            ;
++----------------------------------------------------------------+--------------------+--------------------+
+; Option                                                         ; Setting            ; Default Value      ;
++----------------------------------------------------------------+--------------------+--------------------+
+; Device                                                         ; EP2C8Q208C8        ;                    ;
+; Top-level entity name                                          ; EXP4               ; EXP4               ;
+; Family name                                                    ; Cyclone II         ; Stratix II         ;
+; Use Generated Physical Constraints File                        ; Off                ;                    ;
+; Use smart compilation                                          ; Off                ; Off                ;
+; Restructure Multiplexers                                       ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                            ; Off                ; Off                ;
+; Preserve fewer node names                                      ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                      ; Off                ; Off                ;
+; Verilog Version                                                ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                   ; VHDL93             ; VHDL93             ;
+; State Machine Processing                                       ; Auto               ; Auto               ;
+; Safe State Machine                                             ; Off                ; Off                ;
+; Extract Verilog State Machines                                 ; On                 ; On                 ;
+; Extract VHDL State Machines                                    ; On                 ; On                 ;
+; Ignore Verilog initial constructs                              ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                     ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                 ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                        ; On                 ; On                 ;
+; Parallel Synthesis                                             ; Off                ; Off                ;
+; DSP Block Balancing                                            ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                             ; On                 ; On                 ;
+; Power-Up Don't Care                                            ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                   ; Off                ; Off                ;
+; Remove Duplicate Registers                                     ; On                 ; On                 ;
+; Ignore CARRY Buffers                                           ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                         ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                          ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                      ; Off                ; Off                ;
+; Ignore LCELL Buffers                                           ; Off                ; Off                ;
+; Ignore SOFT Buffers                                            ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                 ; Off                ; Off                ;
+; Optimization Technique                                         ; Balanced           ; Balanced           ;
+; Carry Chain Length                                             ; 70                 ; 70                 ;
+; Auto Carry Chains                                              ; On                 ; On                 ;
+; Auto Open-Drain Pins                                           ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                          ; Off                ; Off                ;
+; Perform gate-level register retiming                           ; Off                ; Off                ;
+; Allow register retiming to trade off Tsu/Tco with Fmax         ; On                 ; On                 ;
+; Auto ROM Replacement                                           ; On                 ; On                 ;
+; Auto RAM Replacement                                           ; On                 ; On                 ;
+; Auto Shift Register Replacement                                ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                  ; On                 ; On                 ;
+; Strict RAM Replacement                                         ; Off                ; Off                ;
+; Allow Synchronous Control Signals                              ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                         ; Off                ; Off                ;
+; Auto RAM to Logic Cell Conversion                              ; Off                ; Off                ;
+; Auto Resource Sharing                                          ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                             ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                             ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                  ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing            ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives              ; Off                ; Off                ;
+; Show Parameter Settings Tables in Synthesis Report             ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                             ; Off                ; Off                ;
+; Synchronization Register Chain Length                          ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                   ; Normal compilation ; Normal compilation ;
+; HDL message level                                              ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report       ; 100                ; 100                ;
+; Number of Inverted Registers Reported in Synthesis Report      ; 100                ; 100                ;
+; Clock MUX Protection                                           ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                    ; Off                ; Off                ;
+; Block Design Naming                                            ; Auto               ; Auto               ;
+; SDC constraint protection                                      ; Off                ; Off                ;
+; Synthesis Effort                                               ; Auto               ; Auto               ;
+; Allows Asynchronous Clear Usage For Shift Register Replacement ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                             ; Medium             ; Medium             ;
++----------------------------------------------------------------+--------------------+--------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                         ;
++----------------------------------+-----------------+------------------------------------------+----------------------------------------------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                                                   ;
++----------------------------------+-----------------+------------------------------------------+----------------------------------------------------------------------------------------------------------------+
+; EXP4.bdf                         ; yes             ; User Block Diagram/Schematic File        ; D:/D/大三上资料/课件 真/计算机组成与设计/课设实验/EXP4-final/EXP4-2017-11-22 - 优化/EXP4.bdf                   ;
+; Reg.bdf                          ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/D/大三上资料/课件 真/计算机组成与设计/课设实验/EXP4-final/EXP4-2017-11-22 - 优化/Reg.bdf                    ;
+; maincontrol.v                    ; yes             ; Auto-Found Verilog HDL File              ; D:/D/大三上资料/课件 真/计算机组成与设计/课设实验/EXP4-final/EXP4-2017-11-22 - 优化/maincontrol.v              ;
+; Start.bdf                        ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/D/大三上资料/课件 真/计算机组成与设计/课设实验/EXP4-final/EXP4-2017-11-22 - 优化/Start.bdf                  ;
+; Timing.bdf                       ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/D/大三上资料/课件 真/计算机组成与设计/课设实验/EXP4-final/EXP4-2017-11-22 - 优化/Timing.bdf                 ;
+; decoder24.bdf                    ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/D/大三上资料/课件 真/计算机组成与设计/课设实验/EXP4-final/EXP4-2017-11-22 - 优化/decoder24.bdf              ;
+; mod4add1.bdf                     ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/D/大三上资料/课件 真/计算机组成与设计/课设实验/EXP4-final/EXP4-2017-11-22 - 优化/mod4add1.bdf               ;
+; control.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/D/大三上资料/课件 真/计算机组成与设计/课设实验/EXP4-final/EXP4-2017-11-22 - 优化/control.bdf                ;
+; sel2.bdf                         ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/D/大三上资料/课件 真/计算机组成与设计/课设实验/EXP4-final/EXP4-2017-11-22 - 优化/sel2.bdf                   ;
+; ALU.bdf                          ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/D/大三上资料/课件 真/计算机组成与设计/课设实验/EXP4-final/EXP4-2017-11-22 - 优化/ALU.bdf                    ;
+; lpm_clshift0.tdf                 ; yes             ; Auto-Found Wizard-Generated File         ; D:/D/大三上资料/课件 真/计算机组成与设计/课设实验/EXP4-final/EXP4-2017-11-22 - 优化/lpm_clshift0.tdf           ;
+; lpm_clshift.inc                  ; yes             ; Auto-Found AHDL File                     ; f:/software/altera/81/quartus/libraries/megafunctions/lpm_clshift.inc                                          ;
+; lpm_clshift.tdf                  ; yes             ; Megafunction                             ; f:/software/altera/81/quartus/libraries/megafunctions/lpm_clshift.tdf                                          ;
+; db/lpm_clshift_gic.tdf           ; yes             ; Auto-Generated Megafunction              ; D:/D/大三上资料/课件 真/计算机组成与设计/课设实验/EXP4-final/EXP4-2017-11-22 - 优化/db/lpm_clshift_gic.tdf     ;
+; lpm_divide1.tdf                  ; yes             ; Auto-Found Wizard-Generated File         ; D:/D/大三上资料/课件 真/计算机组成与设计/课设实验/EXP4-final/EXP4-2017-11-22 - 优化/lpm_divide1.tdf            ;
+; lpm_divide.inc                   ; yes             ; Auto-Found AHDL File                     ; f:/software/altera/81/quartus/libraries/megafunctions/lpm_divide.inc                                           ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                             ; f:/software/altera/81/quartus/libraries/megafunctions/lpm_divide.tdf                                           ;
+; abs_divider.inc                  ; yes             ; Megafunction                             ; f:/software/altera/81/quartus/libraries/megafunctions/abs_divider.inc                                          ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                             ; f:/software/altera/81/quartus/libraries/megafunctions/sign_div_unsign.inc                                      ;
+; aglobal81.inc                    ; yes             ; Megafunction                             ; f:/software/altera/81/quartus/libraries/megafunctions/aglobal81.inc                                            ;
+; db/lpm_divide_krp.tdf            ; yes             ; Auto-Generated Megafunction              ; D:/D/大三上资料/课件 真/计算机组成与设计/课设实验/EXP4-final/EXP4-2017-11-22 - 优化/db/lpm_divide_krp.tdf      ;
+; db/sign_div_unsign_fkh.tdf       ; yes             ; Auto-Generated Megafunction              ; D:/D/大三上资料/课件 真/计算机组成与设计/课设实验/EXP4-final/EXP4-2017-11-22 - 优化/db/sign_div_unsign_fkh.tdf ;
+; db/alt_u_div_00f.tdf             ; yes             ; Auto-Generated Megafunction              ; D:/D/大三上资料/课件 真/计算机组成与设计/课设实验/EXP4-final/EXP4-2017-11-22 - 优化/db/alt_u_div_00f.tdf       ;
+; db/add_sub_lkc.tdf               ; yes             ; Auto-Generated Megafunction              ; D:/D/大三上资料/课件 真/计算机组成与设计/课设实验/EXP4-final/EXP4-2017-11-22 - 优化/db/add_sub_lkc.tdf         ;
+; db/add_sub_mkc.tdf               ; yes             ; Auto-Generated Megafunction              ; D:/D/大三上资料/课件 真/计算机组成与设计/课设实验/EXP4-final/EXP4-2017-11-22 - 优化/db/add_sub_mkc.tdf         ;
+; 74181.bdf                        ; yes             ; Megafunction                             ; f:/software/altera/81/quartus/libraries/others/maxplus2/74181.bdf                                              ;
+; selector.bdf                     ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/D/大三上资料/课件 真/计算机组成与设计/课设实验/EXP4-final/EXP4-2017-11-22 - 优化/selector.bdf               ;
+; mul.bdf                          ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/D/大三上资料/课件 真/计算机组成与设计/课设实验/EXP4-final/EXP4-2017-11-22 - 优化/mul.bdf                    ;
+; 74285.bdf                        ; yes             ; Megafunction                             ; f:/software/altera/81/quartus/libraries/others/maxplus2/74285.bdf                                              ;
+; 74284.bdf                        ; yes             ; Megafunction                             ; f:/software/altera/81/quartus/libraries/others/maxplus2/74284.bdf                                              ;
+; tri8.bdf                         ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/D/大三上资料/课件 真/计算机组成与设计/课设实验/EXP4-final/EXP4-2017-11-22 - 优化/tri8.bdf                   ;
++----------------------------------+-----------------+------------------------------------------+----------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                          ;
++---------------------------------------------+------------------------+
+; Resource                                    ; Usage                  ;
++---------------------------------------------+------------------------+
+; Estimated Total logic elements              ; 325                    ;
+;                                             ;                        ;
+; Total combinational functions               ; 325                    ;
+; Logic element usage by number of LUT inputs ;                        ;
+;     -- 4 input functions                    ; 194                    ;
+;     -- 3 input functions                    ; 91                     ;
+;     -- <=2 input functions                  ; 40                     ;
+;                                             ;                        ;
+; Logic elements by mode                      ;                        ;
+;     -- normal mode                          ; 292                    ;
+;     -- arithmetic mode                      ; 33                     ;
+;                                             ;                        ;
+; Total registers                             ; 44                     ;
+;     -- Dedicated logic registers            ; 44                     ;
+;     -- I/O registers                        ; 0                      ;
+;                                             ;                        ;
+; I/O pins                                    ; 70                     ;
+; Maximum fan-out node                        ; selector:inst16|inst33 ;
+; Maximum fan-out                             ; 41                     ;
+; Total fan-out                               ; 1316                   ;
+; Average fan-out                             ; 3.00                   ;
++---------------------------------------------+------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                              ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                    ; Library Name ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; |EXP4                                        ; 325 (4)           ; 44 (0)       ; 0           ; 0            ; 0       ; 0         ; 70   ; 0            ; |EXP4                                                                                                                                                                  ; work         ;
+;    |ALU:inst|                                ; 143 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EXP4|ALU:inst                                                                                                                                                         ; work         ;
+;       |74181:inst1|                          ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EXP4|ALU:inst|74181:inst1                                                                                                                                             ; work         ;
+;       |74181:inst|                           ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EXP4|ALU:inst|74181:inst                                                                                                                                              ; work         ;
+;       |lpm_clshift0:inst28|                  ; 33 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EXP4|ALU:inst|lpm_clshift0:inst28                                                                                                                                     ; work         ;
+;          |lpm_clshift:lpm_clshift_component| ; 33 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EXP4|ALU:inst|lpm_clshift0:inst28|lpm_clshift:lpm_clshift_component                                                                                                   ; work         ;
+;             |lpm_clshift_gic:auto_generated| ; 33 (33)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EXP4|ALU:inst|lpm_clshift0:inst28|lpm_clshift:lpm_clshift_component|lpm_clshift_gic:auto_generated                                                                    ; work         ;
+;       |lpm_divide1:inst2|                    ; 80 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EXP4|ALU:inst|lpm_divide1:inst2                                                                                                                                       ; work         ;
+;          |lpm_divide:lpm_divide_component|   ; 80 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EXP4|ALU:inst|lpm_divide1:inst2|lpm_divide:lpm_divide_component                                                                                                       ; work         ;
+;             |lpm_divide_krp:auto_generated|  ; 80 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EXP4|ALU:inst|lpm_divide1:inst2|lpm_divide:lpm_divide_component|lpm_divide_krp:auto_generated                                                                         ; work         ;
+;                |sign_div_unsign_fkh:divider| ; 80 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EXP4|ALU:inst|lpm_divide1:inst2|lpm_divide:lpm_divide_component|lpm_divide_krp:auto_generated|sign_div_unsign_fkh:divider                                             ; work         ;
+;                   |alt_u_div_00f:divider|    ; 80 (79)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EXP4|ALU:inst|lpm_divide1:inst2|lpm_divide:lpm_divide_component|lpm_divide_krp:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_00f:divider                       ; work         ;
+;                      |add_sub_mkc:add_sub_1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EXP4|ALU:inst|lpm_divide1:inst2|lpm_divide:lpm_divide_component|lpm_divide_krp:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_00f:divider|add_sub_mkc:add_sub_1 ; work         ;
+;    |Reg:IR|                                  ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EXP4|Reg:IR                                                                                                                                                           ; work         ;
+;    |Reg:MAR|                                 ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EXP4|Reg:MAR                                                                                                                                                          ; work         ;
+;    |Reg:PC|                                  ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EXP4|Reg:PC                                                                                                                                                           ; work         ;
+;    |Reg:R0|                                  ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EXP4|Reg:R0                                                                                                                                                           ; work         ;
+;    |Reg:R1|                                  ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EXP4|Reg:R1                                                                                                                                                           ; work         ;
+;    |Start:inst42|                            ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EXP4|Start:inst42                                                                                                                                                     ; work         ;
+;    |Timing:inst2|                            ; 5 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EXP4|Timing:inst2                                                                                                                                                     ; work         ;
+;       |decoder24:inst|                       ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EXP4|Timing:inst2|decoder24:inst                                                                                                                                      ; work         ;
+;    |control:inst1|                           ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EXP4|control:inst1                                                                                                                                                    ; work         ;
+;    |maincontrol:inst4|                       ; 55 (55)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EXP4|maincontrol:inst4                                                                                                                                                ; work         ;
+;    |mod4add1:inst3|                          ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EXP4|mod4add1:inst3                                                                                                                                                   ; work         ;
+;    |mul:inst21|                              ; 63 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EXP4|mul:inst21                                                                                                                                                       ; work         ;
+;       |74284:inst1|                          ; 45 (45)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EXP4|mul:inst21|74284:inst1                                                                                                                                           ; work         ;
+;       |74285:inst|                           ; 18 (18)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EXP4|mul:inst21|74285:inst                                                                                                                                            ; work         ;
+;    |sel2:inst23|                             ; 20 (20)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EXP4|sel2:inst23                                                                                                                                                      ; work         ;
+;    |selector:inst15|                         ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EXP4|selector:inst15                                                                                                                                                  ; work         ;
+;    |selector:inst16|                         ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EXP4|selector:inst16                                                                                                                                                  ; work         ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 44    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 44    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |EXP4|sel2:inst23|inst24   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ALU:inst|lpm_clshift0:inst28|lpm_clshift:lpm_clshift_component ;
++----------------+-----------------+--------------------------------------------------------------------------+
+; Parameter Name ; Value           ; Type                                                                     ;
++----------------+-----------------+--------------------------------------------------------------------------+
+; LPM_PIPELINE   ; 0               ; Untyped                                                                  ;
+; LPM_SHIFTTYPE  ; LOGICAL         ; Untyped                                                                  ;
+; LPM_WIDTH      ; 8               ; Untyped                                                                  ;
+; LPM_WIDTHDIST  ; 3               ; Untyped                                                                  ;
+; CBXI_PARAMETER ; lpm_clshift_gic ; Untyped                                                                  ;
++----------------+-----------------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ALU:inst|lpm_divide1:inst2|lpm_divide:lpm_divide_component ;
++------------------------+----------------+---------------------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                          ;
++------------------------+----------------+---------------------------------------------------------------+
+; LPM_WIDTHN             ; 8              ; Untyped                                                       ;
+; LPM_WIDTHD             ; 8              ; Untyped                                                       ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                                       ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                                       ;
+; LPM_PIPELINE           ; 0              ; Untyped                                                       ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                                       ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                                       ;
+; CBXI_PARAMETER         ; lpm_divide_krp ; Untyped                                                       ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                                       ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                       ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                                    ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                                  ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                                  ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                                ;
++------------------------+----------------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
+    Info: Processing started: Sat Dec 02 10:59:20 2017
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off EXP4 -c EXP4
+Info: Found 1 design units, including 1 entities, in source file EXP4.bdf
+    Info: Found entity 1: EXP4
+Info: Elaborating entity "EXP4" for the top level hierarchy
+Warning: Block or symbol "control" of instance "inst1" overlaps another block or symbol
+Warning: Pin "pin_name" not connected
+Warning: Using design file Reg.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: Reg
+Info: Elaborating entity "Reg" for hierarchy "Reg:MAR"
+Warning: Using design file maincontrol.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: maincontrol
+Info: Elaborating entity "maincontrol" for hierarchy "maincontrol:inst4"
+Warning: Using design file Start.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: Start
+Info: Elaborating entity "Start" for hierarchy "Start:inst42"
+Warning: Using design file Timing.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: Timing
+Info: Elaborating entity "Timing" for hierarchy "Timing:inst2"
+Warning: Using design file decoder24.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: decoder24
+Info: Elaborating entity "decoder24" for hierarchy "Timing:inst2|decoder24:inst"
+Warning: Using design file mod4add1.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: mod4add1
+Info: Elaborating entity "mod4add1" for hierarchy "mod4add1:inst3"
+Warning: Using design file control.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: control
+Info: Elaborating entity "control" for hierarchy "control:inst1"
+Warning: Using design file sel2.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: sel2
+Info: Elaborating entity "sel2" for hierarchy "sel2:inst23"
+Warning: Using design file ALU.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: ALU
+Info: Elaborating entity "ALU" for hierarchy "ALU:inst"
+Warning: No superset bus at connection
+Warning: No superset bus at connection
+Warning: Using design file lpm_clshift0.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: lpm_clshift0
+Info: Elaborating entity "lpm_clshift0" for hierarchy "ALU:inst|lpm_clshift0:inst28"
+Info: Elaborating entity "lpm_clshift" for hierarchy "ALU:inst|lpm_clshift0:inst28|lpm_clshift:lpm_clshift_component"
+Info: Elaborated megafunction instantiation "ALU:inst|lpm_clshift0:inst28|lpm_clshift:lpm_clshift_component"
+Info: Instantiated megafunction "ALU:inst|lpm_clshift0:inst28|lpm_clshift:lpm_clshift_component" with the following parameter:
+    Info: Parameter "LPM_TYPE" = "LPM_CLSHIFT"
+    Info: Parameter "LPM_SHIFTTYPE" = "LOGICAL"
+    Info: Parameter "LPM_WIDTH" = "8"
+    Info: Parameter "LPM_WIDTHDIST" = "3"
+Info: Found 1 design units, including 1 entities, in source file db/lpm_clshift_gic.tdf
+    Info: Found entity 1: lpm_clshift_gic
+Info: Elaborating entity "lpm_clshift_gic" for hierarchy "ALU:inst|lpm_clshift0:inst28|lpm_clshift:lpm_clshift_component|lpm_clshift_gic:auto_generated"
+Warning: Using design file lpm_divide1.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: lpm_divide1
+Info: Elaborating entity "lpm_divide1" for hierarchy "ALU:inst|lpm_divide1:inst2"
+Info: Elaborating entity "lpm_divide" for hierarchy "ALU:inst|lpm_divide1:inst2|lpm_divide:lpm_divide_component"
+Info: Elaborated megafunction instantiation "ALU:inst|lpm_divide1:inst2|lpm_divide:lpm_divide_component"
+Info: Instantiated megafunction "ALU:inst|lpm_divide1:inst2|lpm_divide:lpm_divide_component" with the following parameter:
+    Info: Parameter "LPM_TYPE" = "LPM_DIVIDE"
+    Info: Parameter "LPM_HINT" = "LPM_REMAINDERPOSITIVE=TRUE"
+    Info: Parameter "LPM_WIDTHN" = "8"
+    Info: Parameter "LPM_WIDTHD" = "8"
+    Info: Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info: Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info: Found 1 design units, including 1 entities, in source file db/lpm_divide_krp.tdf
+    Info: Found entity 1: lpm_divide_krp
+Info: Elaborating entity "lpm_divide_krp" for hierarchy "ALU:inst|lpm_divide1:inst2|lpm_divide:lpm_divide_component|lpm_divide_krp:auto_generated"
+Info: Found 1 design units, including 1 entities, in source file db/sign_div_unsign_fkh.tdf
+    Info: Found entity 1: sign_div_unsign_fkh
+Info: Elaborating entity "sign_div_unsign_fkh" for hierarchy "ALU:inst|lpm_divide1:inst2|lpm_divide:lpm_divide_component|lpm_divide_krp:auto_generated|sign_div_unsign_fkh:divider"
+Info: Found 1 design units, including 1 entities, in source file db/alt_u_div_00f.tdf
+    Info: Found entity 1: alt_u_div_00f
+Info: Elaborating entity "alt_u_div_00f" for hierarchy "ALU:inst|lpm_divide1:inst2|lpm_divide:lpm_divide_component|lpm_divide_krp:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_00f:divider"
+Info: Found 1 design units, including 1 entities, in source file db/add_sub_lkc.tdf
+    Info: Found entity 1: add_sub_lkc
+Info: Elaborating entity "add_sub_lkc" for hierarchy "ALU:inst|lpm_divide1:inst2|lpm_divide:lpm_divide_component|lpm_divide_krp:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_00f:divider|add_sub_lkc:add_sub_0"
+Info: Found 1 design units, including 1 entities, in source file db/add_sub_mkc.tdf
+    Info: Found entity 1: add_sub_mkc
+Info: Elaborating entity "add_sub_mkc" for hierarchy "ALU:inst|lpm_divide1:inst2|lpm_divide:lpm_divide_component|lpm_divide_krp:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_00f:divider|add_sub_mkc:add_sub_1"
+Info: Elaborating entity "74181" for hierarchy "ALU:inst|74181:inst1"
+Info: Elaborated megafunction instantiation "ALU:inst|74181:inst1"
+Warning: Using design file selector.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: selector
+Info: Elaborating entity "selector" for hierarchy "selector:inst15"
+Warning: Using design file mul.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: mul
+Info: Elaborating entity "mul" for hierarchy "mul:inst21"
+Info: Elaborating entity "74285" for hierarchy "mul:inst21|74285:inst"
+Info: Elaborated megafunction instantiation "mul:inst21|74285:inst"
+Info: Elaborating entity "74284" for hierarchy "mul:inst21|74284:inst1"
+Info: Elaborated megafunction instantiation "mul:inst21|74284:inst1"
+Warning: Using design file tri8.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: tri8
+Info: Elaborating entity "tri8" for hierarchy "tri8:inst40"
+Info: Ignored 39 buffer(s)
+    Info: Ignored 39 SOFT buffer(s)
+Warning: Clock multiplexers are found and protected
+    Warning: Found clock multiplexer maincontrol:inst4|CPMAR~11
+    Warning: Found clock multiplexer inst8~1
+Warning: Clock multiplexers are found and protected
+    Warning: Found clock multiplexer maincontrol:inst4|M~24
+    Warning: Found clock multiplexer maincontrol:inst4|RB~34
+    Warning: Found clock multiplexer maincontrol:inst4|MA~6
+Warning: Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "pin_name"
+Info: Implemented 436 device resources after synthesis - the final resource count might be different
+    Info: Implemented 6 input pins
+    Info: Implemented 56 output pins
+    Info: Implemented 8 bidirectional pins
+    Info: Implemented 366 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 27 warnings
+    Info: Peak virtual memory: 281 megabytes
+    Info: Processing ended: Sat Dec 02 10:59:24 2017
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:04
+
+
